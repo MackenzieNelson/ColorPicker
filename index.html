@@ -1,1 +1,36 @@
-<h1>Hello Everyone</h1>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Color Picker</title>
+    <script src="colorPicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="colorPicker.css">
+  <head>
+  <body>
+    <header>
+      <h2>Lets Create a Color Picker</h2>
+    </header>
+      <div class="info">
+        <h3>Selected Color</h3>
+        <div id ="selected"></div>
+        <div class="converted">
+          <label class="spaceOut" for="red">Red Value:</label>
+          <input class="spaceOut" type="text" id="red" name="red">
+          <label class="spaceOut" for="green">Green Value:</label>
+          <input class="spaceOut" type="text" id="green" name="green">
+          <label class="spaceOut" for="blue">Blue Value:</label>
+          <input class="spaceOut" type="text" id="blue" name="blue">
+          <button class="spaceOut" onclick="convertFromRGB()">Convert</button>
+        </div>
+        <div class="converted">
+          <h5 id="redConvertedValue">Red Converted Value: </h5>
+          <h5 id="greenConvertedValue">Green Converted Value: </h5>
+          <h5 id="blueConvertedValue">Blue Converted Value: </h5>
+          <h5 id="luminenceValue">Luminence Value: </h5>
+        </div>
+      </div>
+    <footer>
+      <p><small>Copyright Mackenzie Nelson</small></p>
+    </footer>
+</body>
+</html>
